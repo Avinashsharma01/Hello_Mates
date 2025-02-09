@@ -1,0 +1,174 @@
+/* 
+#container {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#imagebox {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    }
+    
+    #imagebox div {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#imagebox div img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px; 
+    }
+    
+    #next {
+    position: absolute;
+    right: 40px;
+    width: 80px;
+    height: 30px;
+    }
+    
+    #pre {
+    position: absolute;
+    left: 40px;
+    width: 80px;
+    height: 30px;
+    } */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: "#ffffff";
+}
+
+#Slidercontainer {
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#imagebox {
+    width: 100%;
+    display: flex;
+}
+
+.imgBox {
+    min-width: 100%; /* Each image box takes up full container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox img {
+    width: 95%; /* Images occupy 80% of their container */
+    height: auto;
+    border-radius: 10px; /* Optional styling */
+}
+
+.SliderBTN {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 8;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#next {
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nextIMGBTN {
+    width: 20px;
+    height: 20px;
+}
+#prevIMGBTN {
+    width: 20px;
+    height: 20px;
+}
+
+#pre {
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 300px) {
+    button {
+        padding: 8px 12px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+    }
+    #next,
+    #pre {
+        right: 3%; /* Adjusted for smaller screens */
+        left: 3%;
+    }
+}
+
+/* Further adjustments for very small screens (mobile) */
+@media (max-width: 480px) {
+    button {
+        padding: 6px 10px; /* Further reduced padding */
+        font-size: 10px; /* Smaller font size */
+    }
+    #next,
+    #pre {
+        right: 2%; /* Tighter placement */
+        left: 2%;
+    }
+}
+
+.button-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* .button {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+.button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

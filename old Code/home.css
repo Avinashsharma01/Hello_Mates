@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+#head {
+    position: sticky;
+    top: 0;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 20px rgb(26, 44, 49);
+}
+nav,
+ul {
+    display: flex;
+}
+nav,
+ul,
+li {
+    padding: 20px;
+    list-style-type: none;
+}
+nav,
+ul,
+li,
+.A {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.A:hover {
+    border-bottom: 2px solid rgb(210, 14, 210);
+    border-top: 2px solid rgb(210, 14, 210);
+}
+
+.menubar i {
+    font-size: 25px;
+}
+
+#logo_img {
+    width: 100px;
+    height: 20px;
+}
+
+/* Main Page css start from here */
+#main_page {
+    font-family: "Roboto", sans-serif;
+    width: 90vw;
+    height: auto;
+    min-height: 96vh;
+    margin-left: 4.5vw;
+    padding: 20px;
+    background-color: rgb(23, 74, 84);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: -25px;
+}
+
+.page {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 250px;
+    /* background-color: rgb(28, 36, 36); */
+    background-color: #2d8187;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.heading {
+    font-family: "Ubuntu", sans-serif;
+    width: 100vw;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 20px;
+    color: #214d8e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.heading,
+h1 {
+    font-size: 1.2rem;
+    margin-top: 12px;
+}
+.headinfo {
+    color: white;
+}
+.sem1,
+.sem2,
+.sem3,
+.sem4,
+.sem5,
+.sem6,
+.sem7,
+.sem8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+.sem1:hover,
+.sem2:hover,
+.sem3:hover,
+.sem4:hover,
+.sem5:hover,
+.sem6:hover,
+.sem7:hover,
+.sem8:hover {
+    color: rgb(82, 81, 81);
+}
+
+.material-symbols-outlined {
+    font-size: 80px !important;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: goldenrod;
+}
+.btn:hover {
+    background-color: #113d4a;
+    color: white;
+    border: 1px solid lime;
+}
+.btn:active {
+    border: 1px solid red;
+    font-size: 5px;
+}
+
+#sem_btn {
+    font-size: 15px;
+}
+
+/* Footer css start frome here */
+
+#foot {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: sticky;
+    bottom: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 20px rgb(26, 44, 49);
+}
+
+/* Design for desktop displays from 1280×720 through 1920×1080. Design for mobile displays from 360×640 through 414×896. */
+
+/* With min-width, styles START and continue forever as long as min-width is met, and no max-width is specified. Max-width is the maximum width at which a style will continue to be applied. After that, the style will STOP being applied. (Have to be ordered from largest to smallest to work properly, regular styles first). */
+
+@media only screen and (max-width: 700px) {
+    ul {
+        display: none;
+    }
+    ul {
+        background-color: #174a54;
+        margin-top: 336px;
+        width: 100vw;
+        text-align: center;
+        position: absolute;
+        left: 0;
+    }
+    a {
+        color: white;
+    }
+    #close {
+        display: none;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .menubar {
+        display: none;
+    }
+}

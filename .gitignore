@@ -1,0 +1,9 @@
+# Ignore PDF files
+*.pdf
+
+# Ignore JPEG files
+*.jpg
+*.jpeg
+
+# Ignore PNG files
+*.png
