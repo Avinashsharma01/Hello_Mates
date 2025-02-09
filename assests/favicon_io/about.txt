@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Leckerli One
+- Font Title: Kdam Thmor Pro
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/leckerlione/v20/V8mCoQH8VCsNttEnxnGQ-1itLZxcBtItFw.ttf
+- Font Source: https://fonts.gstatic.com/s/kdamthmorpro/v5/EJRPQgAzVdcI-Qdvt34jzurnGA7_j89I8ZWb.ttf
 - Font License: undefined)

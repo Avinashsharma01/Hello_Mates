@@ -176,3 +176,8 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
 }
+
+.foot_div a {
+    text-decoration: none;
+    color: white;
+}
